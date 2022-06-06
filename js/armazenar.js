@@ -4,15 +4,26 @@ const voto = document.getElementById('numero')
 function votar(){
     
     if(numero.value == 10){
-        alert('isis')
+        alert('Você votou na candidata: Isis')
     } else if(numero.value == 11){
-        alert('brenda')
+        alert('Você votou na candidata: Brenda')
     }
     else if(numero.value == 12){
-        alert('caio')
+        alert('Você votou no candidato: Caio')
     }
     else{
-        alert('voto nulo')
+        alert('Voto Nulo')
     }
  
 }
+
+function votoBranco(){
+    alert('Voto Branco')
+}
+
+function clean(){
+    document.getElementById('form').reset()
+
+}
+
+
