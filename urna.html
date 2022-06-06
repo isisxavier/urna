@@ -19,24 +19,34 @@
     <h1>Presidente</h1>
 
     <div class="container">
-        <form action="">
+        <form id="form" action="">
 
             <p>Numero do candidato</p>
-            <input type="number" name="numero" id="numero">
+            <input id="numero" type="number" name="numero">
         </form>
 
         <div class="containerButton">
-            <button onclick="alertaUsuario('Candidado vence')"><a href="obrigado.html">Confirma</a></button>
-            <button>Apaga</button>
+            <button onclick="votar()"><a href="obrigado.html">Confirma</a></button>
+            <button >Apaga</button>
             <button><a href="obrigado.html">Branco</a></button>
         </div>
     </div>
 
-    <script>
-        function alertaUsuario(texto){
-             alert(texto)
-        }
+    <!-- <script>
+
+        function votar(){
+
+            if(numero){
+                alert('Isis na frente')
+            }
+            else{
+                alert('erro')
+            }
+     
+    } -->
     </script>
+
+   <script src="./js/armazenar.js"></script>
 
 
 </body>
